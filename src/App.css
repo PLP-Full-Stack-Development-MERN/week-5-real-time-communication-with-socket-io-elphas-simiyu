@@ -1,0 +1,133 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.app-container {
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* NoteEditor Styling */
+.note-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative; /* Allows button positioning */
+}
+
+/* Title and Room ID on the same row */
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.note-header input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.note-header input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Content textarea styling */
+.note-content {
+  width: 100%;
+  height: 300px;
+  padding: 12px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  transition: border-color 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.note-content:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Save Button - Bottom Right */
+.save-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Note List Styling */
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note-item {
+  background: #eef2f7;
+  padding: 12px;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.note-item h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.note-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
