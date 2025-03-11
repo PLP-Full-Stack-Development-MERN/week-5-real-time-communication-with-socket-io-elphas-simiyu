@@ -3,6 +3,8 @@
 ## Project Overview
 This project is a real-time collaborative note-taking application built using the MERN stack with Socket.IO for real-time updates. It allows users to create, edit, and delete notes while seeing changes in real-time across multiple clients.
 
+[Live demo][https://note-app-eight-livid.vercel.app/]
+
 ## Project Structure
 ```
 real-time-notes/
